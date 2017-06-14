@@ -1,7 +1,5 @@
 <template>
-    <div id="translateOutput">
-        <h2>{{translatedText}}</h2>
-    </div>
+        <h2 class="col-sm-12 text-success">{{translatedText}}</h2>
 </template>
 
 <script>
@@ -12,5 +10,7 @@ export default {
 </script>
 
 <style>
-
+h2 {
+    font-size: 50px; 
+}
 </style>

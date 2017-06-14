@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="text-center" id="app">
     <h1>Word Translator with Yandex</h1>
     <h5>Powered By Vue.js</h5>
     <hr>
@@ -35,5 +35,7 @@ export default {
 </script>
 
 <style>
-
+body {
+  background: lightcoral; 
+}
 </style>
