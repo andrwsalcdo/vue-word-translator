@@ -14,6 +14,12 @@ export default {
       return {
           textToTranslate: ''
       }
+  }, 
+  methods: {
+      formSubmit(e) {
+          this.$emit('formSubmit', this.textToTranslate); 
+          e.preventDefault();
+      }
   }
 }
 </script>
