@@ -7,16 +7,20 @@
 </template>
 
 <script>
+import axios from 'axios'
 import TranslateForm from './components/TranslateForm'
 
+
 export default {
-  name: 'app', 
+  name: 'app',
   components: {
     TranslateForm
-  }, 
+  },
   methods: {
     translateText: function(text) {
-      
+      axios.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170614T020251Z.d04903016ebe2c04.1f5b615b327860fde220d9ce388805c1a9008913&lang=ru&text='+text)
+        .then(res => { console.log(res); })
+        .catch(err => { console.log('This is wrong'); })
     }
   }
 }
