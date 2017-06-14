@@ -21,9 +21,12 @@ export default {
           language: ''
       }
   }, 
+  created() {
+        this.language = "es"; 
+  },
   methods: {
       formSubmit(e) {
-          this.$emit('formSubmit', this.textToTranslate); 
+          this.$emit('formSubmit', this.textToTranslate, this.language); 
           e.preventDefault();
       }
   }
