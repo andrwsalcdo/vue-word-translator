@@ -3,18 +3,20 @@
     <h1>Word Translator with Yandex</h1>
     <h5>By Vue.js</h5>
     <TranslateForm v-on:formSubmit="translateText"></TranslateForm>
+    <TranslateOutput v-text="translatedText"></TranslateOutput>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import TranslateForm from './components/TranslateForm'
-
+import TranslateOutput from './components/TranslateOutput'
 
 export default {
   name: 'app',
   components: {
-    TranslateForm
+    TranslateForm, 
+    TranslateOutput
   },
   data: function() {
     return {
