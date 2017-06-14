@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import TranslateForm from './components/TranslateForm.vue'
+import TranslateForm from './components/TranslateForm'
 
 Vue.config.productionTip = false
 
